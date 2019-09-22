@@ -5,27 +5,20 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-	<a href="https://twitter.com/Koga_AltoMando" style="font-size:xx-large;">Mi tuiters</a>
-	<br>
-	<br>
-	<a href="http://mierdicomics.mipropia.com" style="color: white; background-color: #996300; width:100%; height:100%; font-size:xx-large;">
-	Pincha para acceder porque Instagram es un puto grano en el culo y me ha bloqueado el link a la página de Mierdicómics
-	</a>
-	<br>
-	<br>
-	<a href="http://mierdicomics.mipropia.com/kmcu/?personaje=LaGranAventura&orden=a" style="color: white; background-color: #996300; width:100%; height:100%; font-size:xx-large;">
-	Pincha para leer en la web la saga "Mierdicómics contra Elba Jonazo"
-	</a>
-	<br>
-	<br>
-	<a href="https://mega.nz/#!yLADzKZb!a8jCgoFLFlF8MS2XSTce4r0eJV7Lj037_lsUow4eEVs" style="color: white; background-color: #996300; width:100%; height:100%; font-size:xx-large;">
-	Pincha para descargar la saga "Mierdicómics contra Elba Jonazo" desde Mega en formato pdf
-	</a>
-	<br>
-	<br>
-	<a href="https://paypal.me/jkz21" style="font-size:xx-large;">Haz un donativo por PAYPAL si quieres (si no nada)</a>
-	<br>
-	<br>
-	<script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#46b798', 'N4N3WZ77');kofiwidget2.draw();</script> 
+	<script>
+		function sendMail() {
+		    var link = "mailto:juan_sn_bibayo@yahoo.es"
+			     + "?cc=myCCaddress@example.com"
+			     + "&subject=" + escape("This is my subject")
+			     + "&body=" + escape(document.getElementById('myText').value)
+		    ;
+
+		    window.location.href = link;
+		}
+	</script>
+	<textarea id="myText">
+    		Lorem ipsum...
+	</textarea>
+	<button onclick="sendMail(); return false">Send</button>
 </body>
 </html>
